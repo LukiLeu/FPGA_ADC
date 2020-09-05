@@ -1,0 +1,36 @@
+-;----------------------------------------------------------------------------------------------------;;;;;;;;
+-;brief: Testbench For entity inlCorrectionCalc;;;;;;;;
+-;file: inlCorrectionCalc_tb.xlsm;;;;;;;;
+-;author: Lukas Leuenberger;;;;;;;;
+-;----------------------------------------------------------------------------------------------------;;;;;;;;
+-;Copyright(c) 2020 by HSR, Switzerland;;;;;;;;
+-;All rights reserved.;;;;;;;;
+-;----------------------------------------------------------------------------------------------------;;;;;;;;
+-;File history:;;;;;;;;
+-;;;;;;;;;
+-;Version;Date;Author;Remarks;;;;;
+-;----------------------------------------------------------------------------------------------------;;;;;;;;
+-;0000;10.04.2020;L. Leuenberger;Auto-Created;;;;;
+-;----------------------------------------------------------------------------------------------------;;;;;;;;
+-;Stimulus:;;;;;Response:;;;Testvector:
+-;inlData_in;minLengthCarryChain_in;maxLengthCarryChain_in;transition_in;dataValid_in;inlAddr_out;transition_out;dataValid_out;
+-;std_logic_vector(G_NO_OF_SAMPLES_HIST downto 0);std_logic_vector(G_NUM_OF_BITS_FOR_MAX_ELEMS - 1 downto 0);std_logic_vector(G_NUM_OF_BITS_FOR_MAX_ELEMS - 1 downto 0);std_logic_vector(G_NUM_OF_BITS_FOR_MAX_ELEMS - 1 downto 0);std_logic;std_logic_vector(G_NUM_OF_BITS_FOR_MAX_ELEMS - 1 downto 0);std_logic_vector(G_NUM_OF_BITS_FOR_MAX_ELEMS - 1 downto 0);std_logic;
+-;----------------------------------------------------------------------------------------------------;;;;;;;;
+-;Reset sequence;;;;;;;;
+;0000;000;000;000;0;UUU;UUU;U;1
+-;Test multiple calculations;;;;;;;;
+;0000;000;100;000;1;000;000;0;2
+;0000;000;100;001;1;000;000;U;3
+;0000;000;100;010;1;000;000;U;4
+;0001;000;100;011;1;001;000;U;5
+;0000;000;100;100;1;010;000;U;6
+;0001;000;100;101;1;011;000;U;7
+;1111;000;100;110;1;100;000;0;8
+;1100;000;100;111;1;101;000;1;9
+;0011;000;100;000;1;110;001;1;10
+;1100;000;100;000;1;111;010;1;11
+;0000;000;100;000;1;000;011;1;12
+;0000;000;100;000;1;000;010;1;13
+;0000;000;100;000;1;000;000;0;14
+;0000;000;100;000;1;000;100;1;15
+;0000;000;100;000;1;000;000;0;16
