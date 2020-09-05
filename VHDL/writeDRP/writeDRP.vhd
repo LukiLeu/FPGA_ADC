@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------------------------
--- brief: writeDRP - Writes a register of the PLL over the DRP interface
+-- brief: writeDRP - Writes a register of the MMCM over the DRP interface
 -- file: carryDelay.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by HSR, Switzerland
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
 -- All rights reserved.
 ----------------------------------------------------------------------------------------------------
 -- File history:

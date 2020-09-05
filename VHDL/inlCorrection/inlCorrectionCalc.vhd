@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------------------------
--- brief: INL Correction Calc - Korrigiert einen Einganswert anhand der berechneten INL
+-- brief: INL Correction Calc - Correct a TDC value with the INL value
 -- file: inlCorrectionCalc.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by HSR, Switzerland
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
 -- All rights reserved.
 ----------------------------------------------------------------------------------------------------
 -- File history:

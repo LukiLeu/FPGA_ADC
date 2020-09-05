@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------------------------
--- brief: Histogram - Berechnet ein Histogramm
+-- brief: Histogram - Calculates a histogram
 -- file: hitsogram.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by HSR, Switzerland
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
 -- All rights reserved.
 ----------------------------------------------------------------------------------------------------
 -- File history:

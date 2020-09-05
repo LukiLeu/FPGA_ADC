@@ -2,9 +2,6 @@
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
 -- Date        : Fri Jan 31 21:09:13 2020
--- Host        : nextlab running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/lukas/MT_FS20_Leuenberger/Vivado/TDC/blockdesign/TDC/ip/TDC_clk_wiz_1_0/TDC_clk_wiz_1_0_sim_netlist.vhdl
 -- Design      : TDC_clk_wiz_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

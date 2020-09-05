@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------------------------
--- brief: INL Correction - Beeinhaltet alle Blöcke welche benötigt werden um den TDC mittels INL zu korrigieren
+-- brief: INL Correction - Contains all block which are needed to correct the TDC with the INL
 -- file: inlCorrection.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by HSR, Switzerland
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
 -- All rights reserved.
 ----------------------------------------------------------------------------------------------------
 -- File history:

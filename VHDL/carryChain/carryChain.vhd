@@ -1,48 +1,42 @@
--- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
--- #																	 #
--- # Hardware description by Felix Haller fhaller@hsr.ch				 #
--- # Hardware description by Lukas Leuenberger l1leuenb@hsr.ch			 #
--- #																	 #
--- # Created: 19.10.2017												 #
--- # Last modified: 12.05.2020											 #
--- #																	 #
--- # Revision 1.00 - File Created										 #
--- # Revision 1.10 - XOR stage added									 #
--- # Revision 1.20 - XOR stage removed from carry_chain and moved behind #
--- #				 clock domain crossing buffer in <TDC_top>; added BEL#
--- #				 attributes for FF stage to ensure proper routing;	 #
--- # Revision 1.30 - Added abbility to sort the data before the second FF#
--- #				 stage according to the typical STA                  #
--- # Revision 1.40 - Added MUX to be able to input three different       #
--- #                 signals                                             #
--- # Revision 1.50 - Added also XOR outputs and updated simulation model #
--- #																	 #
--- # Copyright by Hochschule fuer Technik in Rapperswil				  	 #
--- #																	 #
--- # The <carry_chain> module generates and places the delay chain, 	 #
--- # through which the comparator output bitstream propagets.			 #
--- #																	 #
--- #																	 #
--- # NOTES:																 #
--- # Since the CARRY8 logic block consists of 8 carry elements, the 	 #
--- # generic parameter 'g_NUM_OF_ELEMS' has to be a multiple of eight!	 #
--- #																	 #
--- # The carry chain is captured in a flip flop stage, placed directly	 #
--- # behind the corresponding carry element for best linearity			 #
--- # 																	 #
--- # This VHDL code is based on code written by h.a.r.homulle@tudelft.nl #
--- # found on http://cas.tudelft.nl/fpga_tdc/TDC_basic.html				 #
--- #																	 #
--- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+----------------------------------------------------------------------------------------------------
+-- brief: carryChain - Carry Chain
+-- file: carryChain.vhd
+-- author: Felix Haller, Lukas Leuenberger
+----------------------------------------------------------------------------------------------------
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
+-- All rights reserved.
+-- This VHDL code is initially based on code written by h.a.r.homulle@tudelft.nl found on http://cas.tudelft.nl/fpga_tdc/TDC_basic.html	
+----------------------------------------------------------------------------------------------------
+-- File history:
+--
+-- Version | Date       | Author             | Remarks
+----------------------------------------------------------------------------------------------------
+-- 1.0     | 19.10.2017 | F. Haller     	 | Auto-Created
+-- 1.1     | --.--.---- | F. Haller     	 | XOR stage added
+-- 1.2     | --.--.---- | F. Haller     	 | XOR stage removed from carry_chain and moved behind clock domain crossing buffer in <TDC_top>; added BEL attributes for FF stage to ensure proper routing
+-- 1.3     | 12.05.2020 | L. Leuenberger   	 | Added abbility to sort the data before the second FF stage according to the typical STA
+-- 1.4     | 12.05.2020 | L. Leuenberger   	 | Added MUX to be able to input three different signals
+-- 1.5     | 12.05.2020 | L. Leuenberger   	 | Added also XOR outputs and updated simulation model
+----------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------
+-- Library declarations
+------------------------------------------------------------------------------------------------
 library ieee;
+-- This package defines the basic std_logic data types and a few functions.								
 use ieee.std_logic_1164.all;
+-- This package provides arithmetic functions for vectors.		
 use ieee.numeric_std.all;
+-- This package provides functions for the calcualtion with real values.
 use ieee.math_real.all;
-
+-- Vivado Components library
 library unisim;
+-- This package contains the iobuf component.
 use unisim.vcomponents.all;
 
+------------------------------------------------------------------------------------------------
+-- Entity declarations
+------------------------------------------------------------------------------------------------
 entity carryChain is
 	generic(
 		g_NUM_OF_ELEMS   : integer := 960; -- number of elements in the delay chain (must be a multiple of 8 and blocksize of transition detektor because of the carry chain block size! carry8 = 1 block of 8 carry elements)
@@ -62,6 +56,9 @@ entity carryChain is
 	);
 end entity carryChain;
 
+------------------------------------------------------------------------------------------------
+-- Architecture
+------------------------------------------------------------------------------------------------
 architecture behavioral of carryChain is
 
 	-- -------------------------------------------------------------------------
@@ -426,9 +423,6 @@ begin
 				R  => '0');             -- 1-bit input: Synchronous reset
 	end generate output_buffer;
 
-	-- -------------------------------------------------------------------------
-	--  LOGIC
-	-- -------------------------------------------------------------------------
 
 	-- -------------------------------------------------------------------------
 	--  OUTPUT LOGIC
@@ -449,6 +443,7 @@ begin
 
 	else generate
 
+		-- Sort the outputs according to the STA
 		buffer_ff : process(clk) is
 		begin
 			if rising_edge(clk) then

@@ -1,19 +1,19 @@
 ----------------------------------------------------------------------------------------------------
---  project       	Division		
--- @file        	division.vhd
--- @author         Lukas Leuenberger
+-- project: Division		
+-- file: division.vhd
+-- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
---  Copyright (c) 2017 by HSR, Switzerland
---  All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
+-- All rights reserved.
 ----------------------------------------------------------------------------------------------------
---  File history:
+-- File history:
 --
---  Version | Date       | Author             | Remarks
---  ------------------------------------------------------------------------------------------------
---  0.1	    | 14.03.2017 | L. Leuenberger  	  | Created
---  0.2		| 21.03.2017 | M. Ehrler		  | Statemachine and division algorithm created
---	0.3		| 27.03.2017 | L. Leuenberger     | Added Division_width_g
---	0.4 	| 15.06.2017 | L. Leuenberger     | Revised
+-- Version 	| Date       | Author             | Remarks
+-- ------------------------------------------------------------------------------------------------
+-- 0.1	    | 14.03.2017 | L. Leuenberger  	  | Created
+-- 0.2		| 21.03.2017 | M. Ehrler		  | Statemachine and division algorithm created
+-- 0.3		| 27.03.2017 | L. Leuenberger     | Added Division_width_g
+-- 0.4 		| 15.06.2017 | L. Leuenberger     | Revised
 ----------------------------------------------------------------------------------------------------
 
 -- Standard library ieee	

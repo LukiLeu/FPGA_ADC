@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------------------------
--- brief: INL - Berechnet die INL aus einer DNL
+-- brief: INL - Calculates the INL from a DNL
 -- file: inl.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by HSR, Switzerland
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
 -- All rights reserved.
 ----------------------------------------------------------------------------------------------------
 -- File history:

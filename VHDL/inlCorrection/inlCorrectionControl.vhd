@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------------------------
--- brief: INL Correction Control - Steuert das erstellen des Histograms, der DNL und INL
+-- brief: INL Correction Control - Controls the calculation of the histogram, the DNL, and INL
 -- file: inlCorrectionControl.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by HSR, Switzerland
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
 -- All rights reserved.
 ----------------------------------------------------------------------------------------------------
 -- File history:

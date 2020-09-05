@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------------------------
--- brief: Implements a single channel TDC with sorted and unsorted output
+-- brief: Implements a single channel TDC
 -- file: tdcSingle.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by HSR, Switzerland
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
 -- All rights reserved.
 ----------------------------------------------------------------------------------------------------
 -- File history:

@@ -1,10 +1,10 @@
 ----------------------------------------------------------------------------------------------------
---  project       	Division - Testbench
---  brief		 	Testbench for the Error Compensation - Division
---  file        	divison_tb.vhd
---  author          Marco Ehrler
+--  project: Division - Testbench
+--  brief: Testbench for the Division block
+--  file: divison_tb.vhd
+--  author: Marco Ehrler
 ----------------------------------------------------------------------------------------------------
---  Copyright (c) 2017 by HSR, Switzerland
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
 --  All rights reserved.
 ----------------------------------------------------------------------------------------------------
 --  File history:
