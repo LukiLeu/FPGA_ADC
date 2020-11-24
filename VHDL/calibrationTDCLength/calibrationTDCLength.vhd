@@ -1,10 +1,11 @@
 ----------------------------------------------------------------------------------------------------
--- brief: calibrationTDCLength - Führt den Kalibrationsvorgang für den TDC aus
+-- brief: This block calibrates the length of the delay chain, eg. the number of taps which
+--        correspond to one clock period are determined.
 -- file: calibrationTDCLength.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
--- All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
 -- File history:
 --

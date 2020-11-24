@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------------------------------
--- brief: Transition Detector - Detects up to two transitions in the carry chain output
+-- brief: Detects up to two transitions (one rising and one falling) in the carry chain output
 --        Partially based on an implementation from Dorian Amiet
 -- file: transitionDetector.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
--- All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
 -- File history:
 --

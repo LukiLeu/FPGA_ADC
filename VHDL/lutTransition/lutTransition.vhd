@@ -1,10 +1,11 @@
 ----------------------------------------------------------------------------------------------------
--- brief: lutTransition - Looks up the corrected value for an input signal and calculates the output value based on this
+-- brief: Looks up the corrected value for an input signal and calculates the output value based on 
+--        this value.
 -- file: lutTransition.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
--- All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
 -- File history:
 --

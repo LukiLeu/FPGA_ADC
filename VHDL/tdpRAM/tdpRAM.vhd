@@ -1,16 +1,16 @@
 ----------------------------------------------------------------------------------------------------
--- project		True dual port ram		
--- file			tdpRAM.vhd
--- author		Lukas Leuenberger
+-- brief: True dual port ram		
+-- file: tdpRAM.vhd
+-- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
---  All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
---  File history:
+-- File history:
 --
---  Version | Date       | Author             | Remarks
---  ------------------------------------------------------------------------------------------------
---  0.1	    | 08.04.2020 | L. Leuenberger     | Created
+-- Version | Date       | Author             | Remarks
+-- -------------------------------------------------------------------------------------------------
+-- 0.1	   | 08.04.2020 | L. Leuenberger     | Created
 ----------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------

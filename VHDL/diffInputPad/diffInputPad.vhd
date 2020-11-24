@@ -1,10 +1,11 @@
 ----------------------------------------------------------------------------------------------------
--- brief: diffInputPad
+-- brief: This block instantiates the differential input/output buffer which is used to generate the
+--        reference slope and which contains also the comparator.
 -- file: diffInputPad.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
--- All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
 -- File history:
 --

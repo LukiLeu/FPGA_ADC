@@ -1,10 +1,10 @@
 ----------------------------------------------------------------------------------------------------
--- brief: carryChain - Carry Chain
+-- brief: This block implements a carry chain.
 -- file: carryChain.vhd
 -- author: Felix Haller, Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
--- All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 -- This VHDL code is initially based on code written by h.a.r.homulle@tudelft.nl found on http://cas.tudelft.nl/fpga_tdc/TDC_basic.html	
 ----------------------------------------------------------------------------------------------------
 -- File history:

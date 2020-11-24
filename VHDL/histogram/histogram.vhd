@@ -1,10 +1,10 @@
 ----------------------------------------------------------------------------------------------------
--- brief: Histogram - Calculates a histogram
+-- brief: This block calculates a histogram.
 -- file: hitsogram.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
--- All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
 -- File history:
 --

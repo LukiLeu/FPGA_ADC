@@ -1,10 +1,13 @@
 ----------------------------------------------------------------------------------------------------
--- brief: This VHDL file implements the full ADC.
--- file: tdc.vhd
+-- brief: This file implements a slope ADC which uses the output impedance in the ouput buffers to 
+--        create a reference slope which is then compared to the signal-to-be-measured. A TDC 
+--        measures the time from the beginning of the slope until the slope crosses the voltage-to-
+--        be-measured. Different linearization and correction techniques are also deployed.
+-- file: adc.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
--- All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
 -- File history:
 --

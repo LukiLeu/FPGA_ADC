@@ -1,10 +1,10 @@
 ----------------------------------------------------------------------------------------------------
--- brief: carryDelay - Applies a configurable delay before the signal enters the carry chain
+-- brief: This block applies a configurable delay before the signal enters the carry chain.
 -- file: carryDelay.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
--- All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
 -- File history:
 --

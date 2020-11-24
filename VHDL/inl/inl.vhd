@@ -1,10 +1,10 @@
 ----------------------------------------------------------------------------------------------------
--- brief: INL - Calculates the INL from a DNL
+-- brief: Calculates the INL from a DNL.
 -- file: inl.vhd
 -- author: Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
--- All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
 -- File history:
 --

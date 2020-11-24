@@ -1,11 +1,10 @@
 ----------------------------------------------------------------------------------------------------
---  project: Division - Testbench
 --  brief: Testbench for the Division block
 --  file: divison_tb.vhd
---  author: Marco Ehrler
+--  author: Marco Ehrler, Lukas Leuenberger
 ----------------------------------------------------------------------------------------------------
--- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences
---  All rights reserved.
+-- Copyright (c) 2020 by OST – Eastern Switzerland University of Applied Sciences (www.ost.ch)
+-- This code is licensed under the MIT license (see LICENSE for details)
 ----------------------------------------------------------------------------------------------------
 --  File history:
 --
