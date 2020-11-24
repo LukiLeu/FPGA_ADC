@@ -1,5 +1,5 @@
 # An FPGA-based 7-ENOB 600 MSample/s ADC without any External Components
-This repository contains the VHDL code of the proposed ADC from the paper XYZ.
+This repository contains the VHDL code of the proposed ADC from the paper "An FPGA-based 7-ENOB 600 MSample/s ADC without any External Components" published at the conference FPGA 2021.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4016001.svg)](https://doi.org/10.5281/zenodo.4016001)
 
