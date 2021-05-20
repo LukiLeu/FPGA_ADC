@@ -1,7 +1,7 @@
 # An FPGA-based 7-ENOB 600 MSample/s ADC without any External Components
-This repository contains the VHDL code of the proposed ADC from the paper "An FPGA-based 7-ENOB 600 MSample/s ADC without any External Components" published at the conference FPGA 2021.
+This repository contains the VHDL code of the proposed ADC from the paper [An FPGA-based 7-ENOB 600 MSample/s ADC without any External Components](https://doi.org/10.1145/3431920.3439287) published at the conference FPGA 2021.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4016001.svg)](https://doi.org/10.5281/zenodo.4016001)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4016001.svg)](https://doi.org/10.5281/zenodo.4016001) [![DOI](https://img.shields.io/badge/DOI-10.1145%2F3431920.3439287-blue)](https://doi.org/10.1145/3431920.3439287)
 
 ## VHDL
 The VHDL code of the ADC is provided in [VHDL/adc/adc.vhd](VHDL/adc/adc.vhd). The ADC was implemented on a ZCU104 demo board from Xilinx which deploys the Ultrascale+ FPGA XCZU7EV-2FFVC1156.
@@ -29,3 +29,7 @@ During placement a DRC error will occur which states that a single ended output 
 ```
 set_property SEVERITY WARNING [get_drc_checks REQP-1581]
 ```
+
+## Known limitations
+- The delay chain cannot be longer than 1.5 times the period of the clock used to determine the length of the delay chain. In other words, if a delay element has a delay of 4ps and a 600MHz clock is used, the delay chain cannot be longer than 625 delay elements (1250 if the XOR outputs are also used).
+- The sum stage of the [transition detector](VHDL/transitionDetector/transitionDetector.vhd) is currently not working for delay chains with less than 512 delay elements. To make it work the range of the integers on [lines 129 to 134](VHDL/transitionDetector/transitionDetector.vhd#L129-134) needs to be increased.
