@@ -32,4 +32,3 @@ set_property SEVERITY WARNING [get_drc_checks REQP-1581]
 
 ## Known limitations
 - The delay chain cannot be longer than 1.5 times the period of the clock used to determine the length of the delay chain. In other words, if a delay element has a delay of 4ps and a 600MHz clock is used, the delay chain cannot be longer than 625 delay elements (1250 if the XOR outputs are also used).
-- The sum stage of the [transition detector](VHDL/transitionDetector/transitionDetector.vhd) is currently not working for delay chains with less than 512 delay elements. To make it work the range of the integers on [lines 129 to 134](VHDL/transitionDetector/transitionDetector.vhd#L129-134) needs to be increased.
